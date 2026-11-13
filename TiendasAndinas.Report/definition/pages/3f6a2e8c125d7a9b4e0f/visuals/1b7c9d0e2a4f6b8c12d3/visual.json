@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "1b7c9d0e2a4f6b8c12d3",
+  "position": {
+    "x": 640,
+    "y": 20,
+    "z": 1002,
+    "height": 120,
+    "width": 290,
+    "tabOrder": 1002
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FACT_Ventas"
+                    }
+                  },
+                  "Property": "Tasa Devolucion"
+                }
+              },
+              "queryRef": "FACT_Ventas.Tasa Devolucion",
+              "nativeQueryRef": "Tasa Devolucion"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Tasa Devolucion (mariano_perez)'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
