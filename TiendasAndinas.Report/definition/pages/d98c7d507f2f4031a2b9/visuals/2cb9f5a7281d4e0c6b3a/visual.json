@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "2cb9f5a7281d4e0c6b3a",
+  "position": {
+    "x": 950,
+    "y": 20,
+    "z": 1003,
+    "height": 120,
+    "width": 310,
+    "tabOrder": 1003
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FACT_Ventas"
+                    }
+                  },
+                  "Property": "Margen %"
+                }
+              },
+              "queryRef": "FACT_Ventas.Margen %",
+              "nativeQueryRef": "Margen %"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Margen % (Angel)'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
