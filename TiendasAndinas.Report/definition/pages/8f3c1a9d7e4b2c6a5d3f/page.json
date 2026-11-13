@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "8f3c1a9d7e4b2c6a5d3f",
+  "displayName": "Página de Vicente",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280
+}
