@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "9c1e4f7a2b8d0e3c5a61",
+  "position": {
+    "x": 20,
+    "y": 20,
+    "z": 1000,
+    "height": 120,
+    "width": 290,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FACT_Ventas"
+                    }
+                  },
+                  "Property": "# Clientes"
+                }
+              },
+              "queryRef": "FACT_Ventas.# Clientes",
+              "nativeQueryRef": "# Clientes"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'# Clientes (Thorvaldur)'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
