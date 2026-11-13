@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "2d7b4a1f9e6c3d8b5a10",
+  "position": {
+    "x": 780,
+    "y": 40,
+    "z": 1001,
+    "height": 120,
+    "width": 420,
+    "tabOrder": 1001
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FACT_Ventas"
+                    }
+                  },
+                  "Property": "Tasa Devolucion"
+                }
+              },
+              "queryRef": "FACT_Ventas.Tasa Devolucion",
+              "nativeQueryRef": "Tasa Devolucion"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Tasa de devolución (AlbertBazan)'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

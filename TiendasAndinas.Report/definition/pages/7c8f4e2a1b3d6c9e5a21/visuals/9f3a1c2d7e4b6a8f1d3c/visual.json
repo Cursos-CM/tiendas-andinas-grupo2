@@ -1,0 +1,78 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "9f3a1c2d7e4b6a8f1d3c",
+  "position": {
+    "x": 40,
+    "y": 40,
+    "z": 1000,
+    "height": 300,
+    "width": 700,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Categoria"
+                    }
+                  },
+                  "Property": "Categoria"
+                }
+              },
+              "queryRef": "Categoria.Categoria",
+              "nativeQueryRef": "Categoria",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FACT_Ventas"
+                    }
+                  },
+                  "Property": "Unidades Vendidas"
+                }
+              },
+              "queryRef": "FACT_Ventas.Unidades Vendidas",
+              "nativeQueryRef": "Unidades Vendidas"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Unidades por categoría (AlbertBazan)'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
