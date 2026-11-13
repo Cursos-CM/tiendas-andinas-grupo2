@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "d7b8a2f1c45e9d3b7a2c",
+  "displayName": "Página de abolanhos",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280
+}
