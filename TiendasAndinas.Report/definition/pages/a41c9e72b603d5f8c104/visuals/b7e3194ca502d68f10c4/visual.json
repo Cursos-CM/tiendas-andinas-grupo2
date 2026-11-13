@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "b7e3194ca502d68f10c4",
+  "position": {
+    "x": 900,
+    "y": 120,
+    "z": 1002,
+    "height": 180,
+    "width": 330,
+    "tabOrder": 1002
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FACT_Ventas"
+                    }
+                  },
+                  "Property": "# Clientes"
+                }
+              },
+              "queryRef": "FACT_Ventas.# Clientes",
+              "nativeQueryRef": "# Clientes"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'# Clientes (Mariella)'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
