@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "1c5dbb1790d2a4f8e9b1",
+  "displayName": "Página de Jorge",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280
+}
