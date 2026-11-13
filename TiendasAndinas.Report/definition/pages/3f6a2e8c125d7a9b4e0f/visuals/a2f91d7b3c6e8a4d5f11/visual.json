@@ -1,0 +1,78 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "a2f91d7b3c6e8a4d5f11",
+  "position": {
+    "x": 800,
+    "y": 160,
+    "z": 1005,
+    "height": 260,
+    "width": 460,
+    "tabOrder": 1005
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fact_devoluciones"
+                    }
+                  },
+                  "Property": "Motivo"
+                }
+              },
+              "queryRef": "fact_devoluciones.Motivo",
+              "nativeQueryRef": "Motivo",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FACT_Ventas"
+                    }
+                  },
+                  "Property": "Unidades Devueltas"
+                }
+              },
+              "queryRef": "FACT_Ventas.Unidades Devueltas",
+              "nativeQueryRef": "Unidades Devueltas"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Devoluciones por motivo (mariano_perez)'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
